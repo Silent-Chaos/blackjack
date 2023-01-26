@@ -1,0 +1,26 @@
+body{
+    text-align: center;
+    background-color: rgb(182, 39, 39);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    color: white;
+}
+h1{
+    color:goldenrod;
+    font-style: italic;
+}
+#sg{
+    color: rgb(255, 238, 140);
+    background-color: rgb(150, 196, 81);
+    border-width: 3px;
+    width: 150px;
+    height: 50px;
+    border-radius: 50px;
+    font-weight: bold;
+    padding: 6px;
+    cursor: pointer;
+}
+#sg:hover{
+    background-color:rgb(138, 206, 35) ;
+    border:155PX 55PX;
+}
