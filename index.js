@@ -2,17 +2,21 @@ let firstCard=10
 let secondCard=11
 let sum=firstCard+secondCard
 let HasBlackJack=false
+let cards=[firstCard,secondCard]
 let suml=document.querySelector("#sum-el")
 let messageEl=document.getElementById("message-el")
 let cardsEl=document.getElementById("cards-el")
-
-isAlive=true
+let isAlive=true
 let message=""
 message="logging out"
 
 
 function StartGame(){
-    cardsEl.textContent= "Your Cards :   "+ firstCard   + "     "+ secondCard
+    renderGame()
+}
+
+function renderGame(){
+    cardsEl.textContent= "Your Cards :   "+ cards[0]   + "     "+ cards[1]
     suml.textContent= "Sum: " + sum
 
 if(sum<=20){
@@ -29,10 +33,13 @@ else{
     isAlive=false
 }
 
+
 messageEl.textContent=message
 
 }
 function newCard(){
+let cardd=6
+sum=sum+cardd
+renderGame()
 
-    console.log("pull a new card")
 }
