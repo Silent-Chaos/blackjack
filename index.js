@@ -1,5 +1,6 @@
 let firstCard=10
 let secondCard=11
+
 let sum=firstCard+secondCard
 let HasBlackJack=false
 let cards=[firstCard,secondCard]
@@ -40,6 +41,8 @@ messageEl.textContent=message
 function newCard(){
 let cardd=6
 sum=sum+cardd
+cards.push(cardd)
 renderGame()
 
 }
+
