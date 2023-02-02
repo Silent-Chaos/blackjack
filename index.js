@@ -1,21 +1,35 @@
-let firstCard=getRandomCard()
-let secondCard=getRandomCard()
 
-let sum=firstCard+secondCard
+
+let sum=0
 let HasBlackJack=false
 let suml=document.querySelector("#sum-el")
 let messageEl=document.getElementById("message-el")
 let cardsEl=document.getElementById("cards-el")
-let cards=[firstCard,secondCard]
-let isAlive=true
+let cards=[]
+let isAlive=false
 let message=""
 message="logging out"
 
 function getRandomCard(){
-return Math.floor(Math.random()*12)
+let ranNum = Math.floor(Math.random()*13+1)
+if (ranNum===1){
+return 11
+}
+else if(ranNum>=11){
+return 10
+}
+else{
+    return ranNum
 }
 
+}
 function StartGame(){
+    isAlive=true
+    let firstCard=getRandomCard()
+let secondCard=getRandomCard()
+sum=firstCard+secondCard
+cards=[firstCard,secondCard]
+
     renderGame()
 }
 
@@ -46,11 +60,13 @@ messageEl.textContent=message
 
 }
 function newCard(){
+    if(isAlive===true && HasBlackJack===true)
+    {
 let cardd=getRandomCard()
 sum=sum+cardd
 cards.push(cardd)
 renderGame()
 
 }
-
+}
 
