@@ -1,6 +1,9 @@
 body{
+    margin-top: 200px;
     text-align: center;
-    background-color: rgb(182, 39, 39);
+    background: url("https://img.freepik.com/free-vector/casino-playing-cards-with-symbols-background_1017-23143.jpg?w=740&t=st=1675424362~exp=1675424962~hmac=dcce95f0c05aa86e22e3fce54bdfd107871811cea9732dd3cf9403c5e59da06b");
+    background-repeat: no-repeat;
+    background-size: cover;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-weight: bold;
     color: white;
