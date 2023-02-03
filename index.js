@@ -18,7 +18,7 @@ message="logging out"
 playerEl.textContent=player.Name+" : $"+ player.Chip
 
 function getRandomCard(){
-let ranNum = Math.floor(Math.random()*13+1)
+let ranNum = Math.floor(Math.random()*11+1)
 if (ranNum===1){
 return 11
 }
