@@ -1,4 +1,8 @@
 
+let player={
+Name:"Per",
+Chip:100
+}
 
 let sum=0
 let HasBlackJack=false
@@ -8,7 +12,10 @@ let cardsEl=document.getElementById("cards-el")
 let cards=[]
 let isAlive=false
 let message=""
+
+let playerEl=document.getElementById("player-el")
 message="logging out"
+playerEl.textContent=player.Name+" : $"+ player.Chip
 
 function getRandomCard(){
 let ranNum = Math.floor(Math.random()*13+1)
